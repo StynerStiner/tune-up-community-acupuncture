@@ -203,68 +203,79 @@
             .swiper-slide .slider-title .d-block {
                 font-size: 28px !important;
             }
-            /* Testimonial section - FIXED mobile responsiveness */
-            section.text-light.section-dark.jarallax {
-                padding: 40px 15px !important;
+            /* Testimonial section - compact on mobile */
+            section.section-dark.jarallax {
+                padding: 30px 0 !important;
                 min-height: auto !important;
-            }
-            section.text-light.section-dark.jarallax .container {
-                padding: 0 !important;
             }
             .testimonial-slide {
                 flex-direction: column !important;
                 text-align: center !important;
-                padding: 15px !important;
-                gap: 15px !important;
-                align-items: center !important;
-            }
-            .testimonial-slide:not(.active) {
-                display: none !important;
+                display: flex !important;
+                padding: 10px !important;
+                gap: 5px !important;
             }
             .testimonial-slide.active {
                 display: flex !important;
-                opacity: 1 !important;
             }
-            .testimonial-slide > div[class*="col-"] {
+            .testimonial-slide .col-lg-2,
+            .testimonial-slide .col-sm-4 {
                 width: 100% !important;
                 max-width: 100% !important;
-                flex: 0 0 100% !important;
-                margin: 0 !important;
+                flex: 0 0 auto !important;
+                margin-left: 0 !important;
+                margin-bottom: 5px !important;
                 padding: 0 !important;
                 display: block !important;
                 visibility: visible !important;
-                opacity: 1 !important;
             }
-            .testimonial-slide > div[class*="col-"].offset-lg-1 {
-                margin-left: 0 !important;
-            }
-            .testimonial-slide img.circle {
-                width: 80px !important;
-                height: 80px !important;
-                margin: 0 auto 10px auto !important;
+            .testimonial-slide .col-lg-2 img,
+            .testimonial-slide .col-sm-4 img {
+                width: 60px !important;
+                height: 60px !important;
+                margin: 0 auto 5px auto !important;
                 display: block !important;
-                border-radius: 50% !important;
-                object-fit: cover !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                transform: scale(1) !important;
+                -webkit-transform: scale(1) !important;
             }
-            .testimonial-slide h5 {
-                font-size: 16px !important;
-                margin: 5px 0 !important;
-                color: #fff !important;
+            .testimonial-slide .col-lg-2 img.wow,
+            .testimonial-slide .col-sm-4 img.wow {
+                visibility: visible !important;
+                opacity: 1 !important;
+                animation: none !important;
+                -webkit-animation: none !important;
             }
-            .testimonial-slide p.small {
-                font-size: 12px !important;
-                margin-bottom: 10px !important;
-                color: rgba(255,255,255,0.8) !important;
+            .testimonial-slide .col-lg-2 h5,
+            .testimonial-slide .col-sm-4 h5 {
+                font-size: 13px !important;
+                margin-top: 3px !important;
+                margin-bottom: 0 !important;
+            }
+            .testimonial-slide .col-lg-2 p.small,
+            .testimonial-slide .col-sm-4 p.small {
+                font-size: 11px !important;
+                margin-bottom: 5px !important;
+            }
+            .testimonial-slide .col-lg-8,
+            .testimonial-slide .col-sm-8 {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: 0 0 auto !important;
+                display: block !important;
+                visibility: visible !important;
+                padding: 0 10px !important;
             }
             .testimonial-slide .col-lg-8 p,
-            .testimonial-slide .col-sm-8 p,
-            .testimonial-slide p.fs-32 {
-                font-size: 16px !important;
+            .testimonial-slide .col-sm-8 p {
+                font-size: 14px !important;
                 text-align: center !important;
-                line-height: 1.5 !important;
-                padding: 0 10px !important;
-                color: #fff !important;
-                font-weight: 500 !important;
+                line-height: 1.3 !important;
+                display: block !important;
+                visibility: visible !important;
+                opacity: 1 !important;
+                margin-bottom: 0 !important;
             }
             section.bg-color.text-light.pt40.pb40 {
                 text-align: left !important;
@@ -590,18 +601,18 @@
 
 
 
-            <section class="text-light section-dark jarallax" style="padding: 80px 0;">
+            <section class="text-light section-dark jarallax">
                 <img src="images/background/3.webp" class="jarallax-img" alt="">
                 <div class="container">
                     <!-- Testimonial 1 - Dr. Eun Kim -->
-                    <div class="testimonial-slide active row g-4 gx-5 relative z-index-1000" style="display: flex !important; opacity: 1 !important; visibility: visible !important;">
-                        <div class="col-lg-2 offset-lg-1 col-sm-4 text-center" style="display: block !important; visibility: visible !important;">
-                            <img src="images/dr-eun-kim/dr-eun-kim.png" class="img-fluid circle" alt="" style="display: block !important; visibility: visible !important; opacity: 1 !important;">
-                            <h5 class="mt-3 mb-0" style="display: block !important; visibility: visible !important;">Dr. Eun Kim</h5>
-                            <p class="small mb-2" style="display: block !important; visibility: visible !important;">Licensed Acupuncturist</p>
+                    <div class="testimonial-slide active row g-4 gx-5 relative z-index-1000">
+                        <div class="col-lg-2 offset-lg-1 col-sm-4 text-center">
+                            <img src="images/dr-eun-kim/dr-eun-kim.png" class="img-fluid circle" alt="">
+                            <h5 class="mt-3 mb-0">Dr. Eun Kim</h5>
+                            <p class="small mb-2">Licensed Acupuncturist</p>
                         </div>
-                        <div class="col-lg-8 col-sm-8" style="display: block !important; visibility: visible !important;">
-                            <p class="mb20 fs-32 fw-600 lh-1-3" style="display: block !important; visibility: visible !important; opacity: 1 !important;">I love tending to a
+                        <div class="col-lg-8 col-sm-8">
+                            <p class="mb20 wow fadeInUp fs-32 fw-600 lh-1-3" data-wow-delay=".2s">I love tending to a
                                 room full of people resting, allowing the body to regenerate and recenter. My goal is to
                                 make healing accessible and affordable for everyone in our community through gentle,
                                 compassionate care.</p>
@@ -609,14 +620,14 @@
                     </div>
 
                     <!-- Testimonial 2 -->
-                    <div class="testimonial-slide row g-4 gx-5 relative z-index-1000" style="display: none; opacity: 0;">
+                    <div class="testimonial-slide row g-4 gx-5 relative z-index-1000">
                         <div class="col-lg-2 offset-lg-1 col-sm-4 text-center">
                             <img src="images/dr-eun-kim/styner4.jpg" class="img-fluid circle" alt="">
                             <h5 class="mt-3 mb-0">Styner Stiner</h5>
                             <p class="small mb-2">Full Stack Developer</p>
                         </div>
                         <div class="col-lg-8 col-sm-8">
-                            <p class="mb20 fs-32 fw-600 lh-1-3">I suffered from
+                            <p class="mb20 wow fadeInUp fs-32 fw-600 lh-1-3" data-wow-delay=".2s">I suffered from
                                 Degenerative Disc Disease (DDD) for over 1.5 years and now can sit and stand using my
                                 spine fully without needing to lean to a side. Dr. Eun Kim's treatments have been
                                 life-changing!</p>
@@ -624,14 +635,14 @@
                     </div>
 
                     <!-- Testimonial 3 -->
-                    <div class="testimonial-slide row g-4 gx-5 relative z-index-1000" style="display: none; opacity: 0;">
+                    <div class="testimonial-slide row g-4 gx-5 relative z-index-1000">
                         <div class="col-lg-2 offset-lg-1 col-sm-4 text-center">
                             <img src="images/dr-eun-kim/watanistiner.png" class="img-fluid circle" alt="">
                             <h5 class="mt-3 mb-0">Watani Stiner</h5>
                             <p class="small mb-2">77 years old</p>
                         </div>
                         <div class="col-lg-8 col-sm-8">
-                            <p class="mb20 fs-32 fw-600 lh-1-3">I'm 77 years old and
+                            <p class="mb20 wow fadeInUp fs-32 fw-600 lh-1-3" data-wow-delay=".2s">I'm 77 years old and
                                 suffered from sciatica for 2 months. Dr. Eun Kim changed my life! Now I can walk up
                                 stairs straight, travel again, and even do public speaking. I'm so grateful for her
                                 care.</p>
@@ -641,7 +652,6 @@
             </section>
 
             <style>
-                /* Desktop testimonial styles */
                 .testimonial-slide {
                     display: none;
                     opacity: 0;
@@ -649,32 +659,8 @@
                 }
 
                 .testimonial-slide.active {
-                    display: flex !important;
-                    opacity: 1 !important;
-                    visibility: visible !important;
-                }
-                
-                /* Ensure testimonial content is visible */
-                .testimonial-slide.active .col-lg-2,
-                .testimonial-slide.active .col-lg-8,
-                .testimonial-slide.active .col-sm-4,
-                .testimonial-slide.active .col-sm-8 {
-                    display: block !important;
-                    visibility: visible !important;
-                    opacity: 1 !important;
-                }
-                
-                .testimonial-slide.active img {
-                    display: block !important;
-                    visibility: visible !important;
-                    opacity: 1 !important;
-                }
-                
-                .testimonial-slide.active p,
-                .testimonial-slide.active h5 {
-                    display: block !important;
-                    visibility: visible !important;
-                    opacity: 1 !important;
+                    display: flex;
+                    opacity: 1;
                 }
             </style>
 
@@ -684,19 +670,9 @@
                     let currentSlide = 0;
 
                     function showNextSlide() {
-                        // Hide current slide
                         slides[currentSlide].classList.remove('active');
-                        slides[currentSlide].style.display = 'none';
-                        slides[currentSlide].style.opacity = '0';
-                        
-                        // Move to next slide
                         currentSlide = (currentSlide + 1) % slides.length;
-                        
-                        // Show next slide
                         slides[currentSlide].classList.add('active');
-                        slides[currentSlide].style.display = 'flex';
-                        slides[currentSlide].style.opacity = '1';
-                        slides[currentSlide].style.visibility = 'visible';
                     }
 
                     // Rotate every 6 seconds
