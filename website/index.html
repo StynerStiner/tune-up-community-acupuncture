@@ -203,61 +203,68 @@
             .swiper-slide .slider-title .d-block {
                 font-size: 28px !important;
             }
-            /* Testimonial section - COMPACT on mobile */
-            #testimonial-section,
-            section.text-light.section-dark.jarallax,
-            section#testimonial-section.text-light.section-dark.jarallax {
+            /* Testimonial section - FIXED mobile responsiveness */
+            section.text-light.section-dark.jarallax {
+                padding: 40px 15px !important;
+                min-height: auto !important;
+            }
+            section.text-light.section-dark.jarallax .container {
+                padding: 0 !important;
+            }
+            .testimonial-slide {
+                flex-direction: column !important;
+                text-align: center !important;
+                padding: 15px !important;
+                gap: 15px !important;
+                align-items: center !important;
+            }
+            .testimonial-slide:not(.active) {
+                display: none !important;
+            }
+            .testimonial-slide.active {
+                display: flex !important;
+                opacity: 1 !important;
+            }
+            .testimonial-slide > div[class*="col-"] {
+                width: 100% !important;
+                max-width: 100% !important;
+                flex: 0 0 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
                 display: block !important;
                 visibility: visible !important;
-                height: 200px !important;
-                max-height: 200px !important;
-                overflow: hidden !important;
-                padding: 15px 10px !important;
+                opacity: 1 !important;
             }
-            #testimonial-section .container,
-            section.text-light.section-dark.jarallax .container {
-                height: 100% !important;
+            .testimonial-slide > div[class*="col-"].offset-lg-1 {
+                margin-left: 0 !important;
             }
-            #testimonial-section .testimonial-slide,
-            .testimonial-slide {
-                flex-direction: row !important;
-                align-items: center !important;
-                gap: 10px !important;
-                padding: 0 !important;
+            .testimonial-slide img.circle {
+                width: 80px !important;
+                height: 80px !important;
+                margin: 0 auto 10px auto !important;
+                display: block !important;
+                border-radius: 50% !important;
+                object-fit: cover !important;
             }
-            #testimonial-section .testimonial-slide.active {
-                display: flex !important;
+            .testimonial-slide h5 {
+                font-size: 16px !important;
+                margin: 5px 0 !important;
+                color: #fff !important;
             }
-            #testimonial-section .testimonial-slide .col-lg-2,
-            #testimonial-section .testimonial-slide .col-sm-4 {
-                width: auto !important;
-                flex: 0 0 60px !important;
-                padding: 0 !important;
-                margin: 0 !important;
-            }
-            #testimonial-section .testimonial-slide img.circle {
-                width: 50px !important;
-                height: 50px !important;
-                margin: 0 !important;
-            }
-            #testimonial-section .testimonial-slide h5 {
-                font-size: 11px !important;
-                margin: 3px 0 0 0 !important;
-            }
-            #testimonial-section .testimonial-slide p.small {
-                font-size: 9px !important;
-                margin: 0 !important;
-            }
-            #testimonial-section .testimonial-slide .col-lg-8,
-            #testimonial-section .testimonial-slide .col-sm-8 {
-                flex: 1 !important;
-                padding: 0 5px !important;
-            }
-            #testimonial-section .testimonial-slide .col-lg-8 p,
-            #testimonial-section .testimonial-slide p.fs-32 {
+            .testimonial-slide p.small {
                 font-size: 12px !important;
-                line-height: 1.3 !important;
-                margin: 0 !important;
+                margin-bottom: 10px !important;
+                color: rgba(255,255,255,0.8) !important;
+            }
+            .testimonial-slide .col-lg-8 p,
+            .testimonial-slide .col-sm-8 p,
+            .testimonial-slide p.fs-32 {
+                font-size: 16px !important;
+                text-align: center !important;
+                line-height: 1.5 !important;
+                padding: 0 10px !important;
+                color: #fff !important;
+                font-weight: 500 !important;
             }
             section.bg-color.text-light.pt40.pb40 {
                 text-align: left !important;
@@ -583,7 +590,7 @@
 
 
 
-            <section id="testimonial-section" class="text-light section-dark jarallax">
+            <section class="text-light section-dark jarallax">
                 <img src="images/background/3.webp" class="jarallax-img" alt="">
                 <div class="container">
                     <!-- Testimonial 1 - Dr. Eun Kim -->
@@ -634,6 +641,7 @@
             </section>
 
             <style>
+                /* Desktop testimonial styles */
                 .testimonial-slide {
                     display: none;
                     opacity: 0;
@@ -641,8 +649,32 @@
                 }
 
                 .testimonial-slide.active {
-                    display: flex;
-                    opacity: 1;
+                    display: flex !important;
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                }
+                
+                /* Ensure testimonial content is visible */
+                .testimonial-slide.active .col-lg-2,
+                .testimonial-slide.active .col-lg-8,
+                .testimonial-slide.active .col-sm-4,
+                .testimonial-slide.active .col-sm-8 {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                }
+                
+                .testimonial-slide.active img {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
+                }
+                
+                .testimonial-slide.active p,
+                .testimonial-slide.active h5 {
+                    display: block !important;
+                    visibility: visible !important;
+                    opacity: 1 !important;
                 }
             </style>
 
