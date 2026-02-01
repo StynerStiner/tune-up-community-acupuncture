@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Migraine Relief - Tune Up Community Acupuncture</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        /* Scale logo bigger WITHOUT affecting navbar layout */
+        header div#logo img {
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
+        }
+
+        header div#logo {
+            margin-left: -350px !important;
+            margin-top: 5px !important;
+        }
+
+        /* Lower navbar tabs to align with logo */
+        header .de-flex-col.header-col-mid {
+            align-items: center !important;
+        }
+
+        header .de-flex {
+            align-items: center;
+        }
+
+        header #mainmenu {
+            margin-bottom: 0;
+        }
+
+        header .de-flex-col.header-col-mid {
+            flex-grow: 1;
+            justify-content: flex-end !important;
+            padding-right: 0px;
+            margin-left: 100px;
+            margin-top: 35px;
+        }
+
+        header #mainmenu>li {
+            margin: 0 10px;
+        }
+
+        header #mainmenu>li>a {
+            font-size: 18px !important;
+        }
+
+        header .h-phone {
+            margin-top: 20px !important;
+        }
+
+        header .btn-main {
+            margin-top: 20px !important;
+        }
+
+        /* Mobile logo fix */
+        @media (max-width: 991px) {
+            header div#logo {
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            header div#logo img {
+                transform: scale(1.5) !important;
+            }
+            footer.footer-light .col-lg-4:first-child p {
+                display: none;
+            }
+            footer.footer-light .col-lg-4 {
+                margin-bottom: 20px;
+            }
+            footer.footer-light .widget h5 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            footer.footer-light .widget ul li {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+            footer.footer-light .spacer-20 {
+                height: 8px !important;
+            }
+            footer.footer-light .social-icons {
+                margin-top: 10px;
+            }
+            footer.footer-light .subfooter .de-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer.footer-light .subfooter .de-flex-col {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li a {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll"><span><a href="#">Scroll to top</a></span></div>
+        <div class="scrollbar-v show-on-scroll"></div>
+        <div id="de-loader"></div>
+        <header class="header-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-location-pin"></i>324 Frank Ogawa Plaza, Oakland, CA 94612</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-clock-time"></i>Mon-Thurs: 11AM-6PM [Closed for Lunch 3-4PM]</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-envelope"></i>info@tuneupca.com</a></div>
+                                </div>
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/black-logo.svg" alt="">
+                                        <img class="logo-scroll" src="images/black-logo.svg" alt="">
+                                        <img class="logo-mobile" src="images/black-logo.svg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="what-to-expect.html">What to Expect</a></li>
+                                    <li><a class="menu-item" href="services.html">Services</a></li>
+                                    <li><a class="menu-item" href="success-stories.html">Success Stories</a></li>
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <div class="h-phone xs-hide"><i class="icofont-headphone-alt"></i><span>Need Help?</span>510-519-8085</div>
+                                    <a href="appointment.html" class="btn-main d-xl-block d-md-none">Make Appointment</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="no-bottom no-top" id="content">
+            <section>
+                <div class="container">
+                    <div class="row g-4 gx-5">
+                        <div class="col-lg-8">
+                            <div class="p-4 bg-grey rounded-10px">
+                                <div class="row g-4">
+                                    <div class="col-lg-12"><h3 class="fs-32 id-color">Migraine Relief</h3></div>
+                                    <div class="col-lg-4"><h5>Presenting Issues</h5></div>
+                                    <div class="col-lg-8"><p>Severe migraines disrupted work and sleep. Acupuncture reduced headache frequency and intensity, allowing for restful nights and better focus.</p></div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-4"><h5>Background Information</h5></div>
+                                    <div class="col-lg-8"><p>Patient experienced severe migraines that disrupted daily work and sleep patterns.</p></div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-4"><h5>Assessment</h5></div>
+                                    <div class="col-lg-8"><p>Pain & Inflammation treatment focused on reducing migraine frequency and intensity.</p></div>
+                                </div>
+                            </div>
+                            <div class="spacer-double"></div>
+                            <div class="p-4 bg-grey rounded-10px">
+                                <div class="row g-4">
+                                    <div class="col-lg-12"><h3 class="fs-32 id-color">Treatment Plan</h3></div>
+                                    <div class="col-lg-4"><h5>Goals</h5></div>
+                                    <div class="col-lg-8">
+                                        <ol class="ul-style-2">
+                                            <li>Reduce migraine frequency and intensity.</li>
+                                            <li>Improve sleep quality and work focus.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-4"><h5>Treatment Approach</h5></div>
+                                    <div class="col-lg-8">
+                                        <ol class="ul-style-2">
+                                            <li>Acupuncture sessions targeting headache and migraine points.</li>
+                                            <li>Treatment to reduce frequency and intensity of migraines.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <div class="row g-4">
+                                    <div class="col-lg-4"><h5>Frequency and Duration</h5></div>
+                                    <div class="col-lg-8"><p>Regular acupuncture sessions over several weeks.</p></div>
+                                </div>
+                            </div>
+                            <div class="spacer-double"></div>
+                            <div class="p-4 bg-grey rounded-10px">
+                                <div class="row g-4">
+                                    <div class="col-lg-12">
+                                        <h3 class="fs-32 id-color mb-4">Results</h3>
+                                        <ol class="ol-style-1">
+                                            <li>Significant reduction in migraine frequency and intensity.</li>
+                                            <li>Improved sleep quality and better focus at work.</li>
+                                            <li>Successful long-term migraine management through acupuncture.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="spacer-double"></div>
+                            <div class="p-5 bg-color text-light rounded-10px">
+                                <div class="row align-items-center g-4 gx-5 relative z-index-1000">
+                                    <div class="col-lg-6 text-center">
+                                        <img src="images/study-case/2.webp" class="img-fluid circle wow scaleIn" alt="">
+                                        <h5 class="mt-3 mb-0">Patient</h5>
+                                        <p class="small mb-2">Customer</p>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <p class="mb20 wow fadeInUp fs-24 fw-600 lh-1-3" data-wow-delay=".2s">The migraines were unbearable and affecting my work and sleep. After acupuncture treatment, the headaches became less frequent and less intense. I can finally sleep through the night and focus at work!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="relative rounded-10px overflow-hidden shadow-soft">
+                                <a class="de-video-play-button popup-youtube" href="http://www.youtube.com/watch?v=RFTUZqXZN6M"><span></span></a>
+                                <img src="images/misc/2.webp" class="img-fluid" alt="">
+                            </div>
+                            <div class="spacer-double"></div>
+                            <div class="padding30 rounded-10px bg-color-3">
+                                <h4>Case Details</h4>
+                                <div class="mb-3">
+                                    <div>Name</div>
+                                    <div class="fw-bold">Patient</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div>Acupuncturist</div>
+                                    <div class="fw-bold">Dr. Eun Kim</div>
+                                </div>
+                                <div class="mb-3">
+                                    <div>Symptoms Encountered</div>
+                                    <div class="fw-bold">Severe migraines, sleep disruption, work focus issues</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer-light">
+            <div class="container relative z-1000">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="images/black-logo.svg" alt="">
+                        <div class="spacer-20"></div>
+                        <p>At Tune Up Community Acupuncture, we understand that life's challenges can sometimes feel overwhelming, and seeking support can be a daunting step. That's why our team of dedicated acupuncturists is here to provide you with the compassionate guidance and expert care you deserve.</p>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Quick Links</h5>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="what-to-expect.html">What to Expect</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="success-stories.html">Success Stories</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="services.html">Acupuncture</a></li>
+                                        <li><a href="services.html">Cupping Therapy</a></li>
+                                        <li><a href="services.html">Herbal Medicine</a></li>
+                                        <li><a href="services.html">Gua Sha</a></li>
+                                        <li><a href="appointment.html">Book Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1">
+                        <div class="widget">
+                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color"></i>Office Location</div>
+                            324 Frank Ogawa Plaza, Oakland, CA 94612
+                            <div class="spacer-20"></div>
+                            <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color"></i>Send a Message</div>
+                            info@tuneupca.com
+                            <div class="spacer-20"></div>
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter relative z-1000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">Copyright 2025 - Tune Up Community Acupuncture | Designed by &nbsp;<a href="https://www.styner.dev/" target="_blank">StynerDev</a></div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt="">
+        </footer>
+    </div>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

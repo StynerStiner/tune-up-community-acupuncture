@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tune Up Community Acupuncture</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tune Up Community Acupuncture" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        header div#logo img {
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
+        }
+        header div#logo {
+            margin-left: -350px !important;
+            margin-top: 5px !important;
+        }
+        header .de-flex-col.header-col-mid {
+            align-items: center !important;
+            flex-grow: 1;
+            justify-content: flex-end !important;
+            padding-right: 0px;
+            margin-left: 100px;
+            margin-top: 35px;
+        }
+        header .de-flex {
+            align-items: center;
+        }
+        header #mainmenu {
+            margin-bottom: 0;
+        }
+        header #mainmenu>li {
+            margin: 0 10px;
+        }
+        header #mainmenu>li>a {
+            font-size: 18px !important;
+        }
+        header .h-phone {
+            margin-top: 20px !important;
+        }
+        header .btn-main {
+            margin-top: 20px !important;
+        }
+        @media (max-width: 991px) {
+            header div#logo {
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+            }
+            header div#logo img {
+                transform: scale(1.5) !important;
+            }
+            footer.footer-light .col-lg-4:first-child p {
+                display: none;
+            }
+            footer.footer-light .col-lg-4 {
+                margin-bottom: 20px;
+            }
+            footer.footer-light .widget h5 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            footer.footer-light .widget ul li {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+            footer.footer-light .spacer-20 {
+                height: 8px !important;
+            }
+            footer.footer-light .social-icons {
+                margin-top: 10px;
+            }
+            footer.footer-light .subfooter .de-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer.footer-light .subfooter .de-flex-col {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li a {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="header-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-location-pin"></i>100 S
+                                            324 Frank Ogawa Plaza, Oakland, CA 94612</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-clock-time"></i><span>Mon -
+                                                Mon-Thurs: 11AM-6PM</span><span class="ms-3">[Closed for Lunch
+                                                3-4PM]</a></div>
+                                    <div class="topbar-widget"><a href="#"><i
+                                                class="icofont-envelope"></i>info@tuneupca.com</a></div>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/black-logo.svg" alt="">
+                                        <img class="logo-scroll" src="images/black-logo.svg" alt="">
+                                        <img class="logo-mobile" src="images/black-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="what-to-expect.html">What to Expect</a></li>
+                                    <li><a class="menu-item" href="services.html">Services</a></li>
+                                    <li><a class="menu-item" href="success-stories.html">Success Stories</a></li>
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <div class="h-phone xs-hide">
+                                        <i class="icofont-headphone-alt"></i>
+                                        <span>Need Help?</span>510-519-8085
+                                    </div>
+                                    <a href="appointment.html" class="btn-main d-xl-block d-md-none">Make
+                                        Appointment</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom no-top" id="content">
+            <div id="top"></div>
+
+            <section>
+                <div class="container">
+                    <div class="row gx-5">
+                        <div class="col-lg-8">
+                            <div>
+
+                                <h2>Understanding the Roots of Anxiety</h2>
+
+                                <div>
+
+                                    <img src="images/misc/4.webp" class="img-fluid mb-4 rounded-20px" alt="">
+
+                                    <p>Quis sunt quis do laboris eiusmod in sint dolore sit pariatur consequat commodo
+                                        aliqua nulla ad dolor aliquip incididunt voluptate est aliquip adipisicing ea
+                                        cupidatat nostrud incididunt aliquip dolore. Sed minim nisi duis laborum est
+                                        labore nisi amet elit adipisicing proident do consectetur dolor labore sit nisi
+                                        ad proident esse ad velit nisi irure reprehenderit ut et dolor labore veniam
+                                        quis.</p>
+
+                                    <p>Sunt duis laboris ex et quis laborum laborum cillum mollit voluptate culpa
+                                        consequat ex cupidatat dolor eiusmod proident proident cillum pariatur sint
+                                        adipisicing in nostrud do dolore consectetur quis incididunt minim consectetur.
+                                        Exercitation elit proident dolor est id eiusmod dolor dolor incididunt ad
+                                        voluptate laboris cupidatat est est sint veniam sint officia sint incididunt est
+                                        sit ut tempor commodo pariatur ut proident et do.</p>
+
+                                    <p>Sed eu in ut sint dolor irure fugiat minim veniam sed ea proident ullamco
+                                        occaecat irure ut velit eu ullamco fugiat cupidatat dolore fugiat. Lorem ipsum
+                                        id non deserunt id consequat duis voluptate amet aliqua pariatur laboris officia
+                                        pariatur veniam velit reprehenderit sint nostrud cupidatat magna eiusmod mollit
+                                        exercitation pariatur nulla minim laboris dolore aliqua consectetur cillum duis
+                                        aute consectetur.</p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div id="blog-comment">
+                                <h4>Comments (5)</h4>
+
+                                <div class="spacer-half"></div>
+
+                                <ol>
+                                    <li>
+                                        <div class="avatar">
+                                            <img src="images/testimonial/1.jpg" alt="">
+                                        </div>
+                                        <div class="comment-info">
+                                            <span class="c_name">Merrill Rayos</span>
+                                            <span class="c_date id-color">2 days ago</span>
+                                            <span class="c_reply"><a href="#">Reply</a></span>
+                                            <div class="clearfix"></div>
+                                        </div>
+
+                                        <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                            explicabo.</div>
+                                        <ol>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="images/testimonial/2.jpg" alt="">
+                                                </div>
+                                                <div class="comment-info">
+                                                    <span class="c_name">Jackqueline Sprang</span>
+                                                    <span class="c_date id-color">2 days ago</span>
+                                                    <span class="c_reply"><a href="#">Reply</a></span>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                                    beatae vitae dicta sunt
+                                                    explicabo.</div>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li>
+                                        <div class="avatar">
+                                            <img src="images/testimonial/3.jpg" alt="">
+                                        </div>
+                                        <div class="comment-info">
+                                            <span class="c_name">Sanford Crowley</span>
+                                            <span class="c_date id-color">2 days ago</span>
+                                            <span class="c_reply"><a href="#">Reply</a></span>
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                            explicabo.</div>
+                                        <ol>
+                                            <li>
+                                                <div class="avatar">
+                                                    <img src="images/testimonial/4.jpg" alt="">
+                                                </div>
+                                                <div class="comment-info">
+                                                    <span class="c_name">Lyndon Pocekay</span>
+                                                    <span class="c_date id-color">2 days ago</span>
+                                                    <span class="c_reply"><a href="#">Reply</a></span>
+                                                    <div class="clearfix"></div>
+                                                </div>
+                                                <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                                    voluptatem accusantium doloremque laudantium, totam rem aperiam,
+                                                    eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                                                    beatae vitae dicta sunt
+                                                    explicabo.</div>
+                                            </li>
+                                        </ol>
+                                    </li>
+
+                                    <li>
+                                        <div class="avatar">
+                                            <img src="images/testimonial/5.jpg" alt="">
+                                        </div>
+                                        <div class="comment-info">
+                                            <span class="c_name">Aleen Crigger</span>
+                                            <span class="c_date id-color">2 days ago</span>
+                                            <span class="c_reply"><a href="#">Reply</a></span>
+
+                                            <div class="clearfix"></div>
+                                        </div>
+                                        <div class="comment">Sed ut perspiciatis unde omnis iste natus error sit
+                                            voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                                            quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                                            explicabo.</div>
+                                    </li>
+                                </ol>
+
+                                <div class="spacer-single"></div>
+
+                                <div id="comment-form-wrapper">
+                                    <h4>Leave a Comment</h4>
+                                    <div class="comment_form_holder">
+                                        <form id="contact_form" name="form1" class="form-border" method="post"
+                                            action="#">
+
+                                            <label>Name</label>
+                                            <input type="text" name="name" id="name" class="form-control">
+
+                                            <label>Email <span class="req">*</span></label>
+                                            <input type="text" name="email" id="email" class="form-control">
+                                            <div id="error_email" class="error">Please check your email</div>
+
+                                            <label>Message <span class="req">*</span></label>
+                                            <textarea cols="10" rows="10" name="message" id="message"
+                                                class="form-control"></textarea>
+                                            <div id="error_message" class="error">Please check your message</div>
+                                            <div id="mail_success" class="success">Thank you. Your message has been
+                                                sent.</div>
+                                            <div id="mail_failed" class="error">Error, email not sent</div>
+
+                                            <p id="btnsubmit">
+                                                <input type="submit" id="send" value="Send" class="btn-main">
+                                            </p>
+
+
+
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="widget widget-post">
+                                <h4>Recent Posts</h4>
+                                <ul class="de-bloglist-type-1">
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/1.webp" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>The Power of Positive Thinking</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/2.webp" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>Stress Management Techniques</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/3.webp" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>The Science of Healing and Resilience</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="d-image">
+                                            <img src="images/news-thumbnail/4.webp" alt="">
+                                        </div>
+                                        <div class="d-content">
+                                            <a href="#">
+                                                <h4>The Secrets to a Fulfilling Life</h4>
+                                            </a>
+                                            <div class="d-date">January 15, 2023</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="widget widget_tags">
+                                <h4>Popular Tags</h4>
+                                <ul>
+                                    <li><a href="#link">Art</a></li>
+                                    <li><a href="#link">Application</a></li>
+                                    <li><a href="#link">Design</a></li>
+                                    <li><a href="#link">Entertainment</a></li>
+                                    <li><a href="#link">Internet</a></li>
+                                    <li><a href="#link">Marketing</a></li>
+                                    <li><a href="#link">Multipurpose</a></li>
+                                    <li><a href="#link">Music</a></li>
+                                    <li><a href="#link">Print</a></li>
+                                    <li><a href="#link">Programming</a></li>
+                                    <li><a href="#link">Responsive</a></li>
+                                    <li><a href="#link">Website</a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer class="footer-light">
+            <div class="container relative z-1000">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="images/black-logo.svg" alt="">
+                        <div class="spacer-20"></div>
+                        <p>At Tune Up Community Acupuncture, we understand that life's challenges can sometimes feel
+                            overwhelming, and
+                            seeking support can be a daunting step. That's why our team of dedicated acupuncturists is
+                            here
+                            to provide you with the compassionate guidance and expert care you deserve.</p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Quick Links</h5>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="what-to-expect.html">What to Expect</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="success-stories.html">Success Stories</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="services.html">Acupuncture</a></li>
+                                        <li><a href="services.html">Cupping Therapy</a></li>
+                                        <li><a href="services.html">Herbal Medicine</a></li>
+                                        <li><a href="services.html">Gua Sha</a></li>
+                                        <li><a href="appointment.html">Book Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1">
+                        <div class="widget">
+
+                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color"></i>Office
+                                Location</div>
+                            324 Frank Ogawa Plaza, Oakland, CA 94612
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color"></i>Send a Message
+                            </div>
+                            info@tuneupca.com
+
+                            <div class="spacer-20"></div>
+
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter relative z-1000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    Copyright 2025 - Tune Up Community Acupuncture | Designed by &nbsp;<a
+                                        href="https://www.styner.dev/" target="_blank">StynerDev</a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt="">
+        </footer>
+        <!-- footer close -->
+    </div>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

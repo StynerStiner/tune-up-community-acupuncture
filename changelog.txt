@@ -1,0 +1,9 @@
+Mindthera 1.1.2
+New added: Homepage 6
+
+Mindthera 1.1.1
+New added: Homepage 5
+
+Mindthera 1.1
+New added: topbar on all pages
+New typography

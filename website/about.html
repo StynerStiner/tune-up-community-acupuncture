@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tune Up Community Acupuncture</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tune Up Community Acupuncture" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        section:not(footer) img[src*="flowers-crop"] {
+            filter: invert(48%) sepia(93%) saturate(450%) hue-rotate(38deg) brightness(95%) contrast(101%) !important;
+        }
+
+        footer.footer-light img[src*="flowers-crop"] {
+            filter: brightness(0) invert(1) !important;
+        }
+
+        hr {
+            border-color: #8F785B;
+            opacity: 1;
+        }
+
+        /* Scale logo bigger WITHOUT affecting navbar layout */
+        header div#logo img {
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
+        }
+
+        header div#logo {
+            margin-left: -350px !important;
+            margin-top: 5px !important;
+        }
+
+        /* Lower navbar tabs to align with logo */
+        header .de-flex-col.header-col-mid {
+            align-items: center !important;
+        }
+
+        header .de-flex {
+            align-items: center;
+        }
+
+        header #mainmenu {
+            margin-bottom: 0;
+        }
+
+        header .de-flex-col.header-col-mid {
+            flex-grow: 1;
+            justify-content: flex-end !important;
+            padding-right: 0px;
+            margin-left: 100px;
+            margin-top: 35px;
+        }
+
+        header #mainmenu>li {
+            margin: 0 10px;
+        }
+
+        header #mainmenu>li>a {
+            font-size: 18px !important;
+        }
+        header #mainmenu>li>a:hover {
+            color: #88a800 !important;
+        }
+        header #mainmenu>li>a.active,
+        header #mainmenu>li.active>a {
+            color: #88a800 !important;
+        }
+
+        header .h-phone {
+            margin-top: 20px !important;
+        }
+
+        header .btn-main {
+            margin-top: 20px !important;
+        }
+
+        /* Mobile logo fix */
+        @media (max-width: 991px) {
+            header div#logo {
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            header div#logo img {
+                transform: scale(1.5) !important;
+            }
+            footer.footer-light .col-lg-4:first-child p {
+                display: none;
+            }
+            footer.footer-light .col-lg-4 {
+                margin-bottom: 20px;
+            }
+            footer.footer-light .widget h5 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            footer.footer-light .widget ul li {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+            footer.footer-light .spacer-20 {
+                height: 8px !important;
+            }
+            footer.footer-light .social-icons {
+                margin-top: 10px;
+            }
+            footer.footer-light .subfooter {
+                display: none !important;
+            }
+            footer.footer-light .subfooter .de-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer.footer-light .subfooter .de-flex-col {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li a {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="header-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-location-pin"></i>100 S
+                                            324 Frank Ogawa Plaza, Oakland, CA 94612</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-clock-time"></i><span>Mon -
+                                                Mon-Thurs: 11AM-6PM</span><span class="ms-3">[Closed for Lunch
+                                                3-4PM]</a></div>
+                                    <div class="topbar-widget"><a href="#"><i
+                                                class="icofont-envelope"></i>info@tuneupca.com</a></div>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/black-logo.svg" alt="">
+                                        <img class="logo-scroll" src="images/black-logo.svg" alt="">
+                                        <img class="logo-mobile" src="images/black-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item active" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="what-to-expect.html">What to Expect</a></li>
+                                    <li><a class="menu-item" href="services.html">Services</a></li>
+                                    <li><a class="menu-item" href="success-stories.html">Success Stories</a></li>
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <div class="h-phone xs-hide">
+                                        <i class="icofont-headphone-alt"></i>
+                                        <span>Need Help?</span>510-519-8085
+                                    </div>
+                                    <a href="appointment.html" class="btn-main d-xl-block d-md-none">Make
+                                        Appointment</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div id="content" class="no-bottom">
+            <div id="top"></div>
+
+            <!-- About Dr. Eun Kim Section -->
+            <section class="pt-5 pb-0">
+                <div class="container">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-5 wow fadeInLeft">
+                            <img src="images/dr-eun-kim/dr-eun-kim.png" alt="Dr. Eun Kim, LAc"
+                                class="img-fluid rounded-20px">
+                        </div>
+                        <div class="col-lg-7 wow fadeInRight">
+                            <div class="subtitle mb-3">About Me</div>
+                            <h2 class="mb-2">Eun Kim, LAc</h2>
+                            <p class="fs-14 text-muted mb-4">(she/they)</p>
+
+                            <p>I graduated from the American College of Traditional Chinese Medicine in SF in 2009.
+                                Since then I have worked in a private fertility clinic and two community clinics, Tiny
+                                Needles and Alameda Community Acupuncture, before founding Tune Up Community
+                                Acupuncture.</p>
+
+                            <p>I love tending to a room full of people resting, allowing the body to regenerate and
+                                recenter. The simple beauty of community acupuncture is healing together and to this, I
+                                dedicate my life.</p>
+
+                            <p>I believe in the social model of business that doesn't exploit or extract capital from
+                                our communities for personal profit driven motives but to give back and grow our own
+                                marginalized and criminalized communities' social and political power starting with
+                                access to health and healing. Let's build the world we want together!</p>
+
+                            <p class="mb-0"><strong>I am committed to widening access to healthcare by making
+                                    acupuncture accessible, effective, and affordable not just for some of us, but for
+                                    all of us.</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div class="container">
+                <hr class="my-5">
+            </div>
+
+            <section class="relative overflow-hidden" style="padding-top: 30px; padding-bottom: 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">About Us</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Meet Our <span
+                                    class="alt-font fw-500 fs-64 id-color-2">Team</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4 gx-5 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="relative rounded-20px overflow-hidden shadow-soft">
+                                <a class="de-video-play-button popup-youtube"
+                                    href="http://www.youtube.com/watch?v=RFTUZqXZN6M">
+                                    <span></span>
+                                </a>
+                                <img src="images/misc/2.webp" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="subtitle wow fadeInUp mb-3">Who We Are</div>
+                            <h2 class="wow fadeInUp">Introducing Our Expert Acupuncture Professionals</h2>
+                            <p class="wow fadeInUp">Located in Oakland, CA, Tune Up Community Acupuncture specializes in
+                                providing
+                                top-notch acupuncture and Traditional Chinese Medicine services. Our team of experienced
+                                professionals is dedicated to
+                                helping you achieve wellness and optimal health. Trust Tune Up Community
+                                Acupuncture for all your
+                                holistic healthcare needs.</p>
+                            <div class="spacer-10"></div>
+                            <a class="btn-main wow fadeInUp" href="about.html">About Us</a>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="bg-color-2 section-dark text-light text-center pt60 pb50 jarallax">
+                <img src="images/background/gradient-3.webp" class="jarallax-img" alt="">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                            <div class="de_count fs-15 wow fadeInRight" data-wow-delay=".0s">
+                                <h3 class="fs-40"><span class="timer fs-40" data-to="6250" data-speed="3000">0</span>+
+                                </h3>
+                                Happy Customers
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                            <div class="de_count fs-15 wow fadeInRight" data-wow-delay=".2s">
+                                <h3 class="fs-40"><span class="timer fs-40" data-to="3200" data-speed="3000">0</span>+
+                                </h3>
+                                Successful Treatments
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                            <div class="de_count fs-15 wow fadeInRight" data-wow-delay=".4s">
+                                <h3 class="fs-40"><span class="timer fs-40" data-to="20" data-speed="3000">0</span>+
+                                </h3>
+                                Years of Exeperience
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 mb-sm-30">
+                            <div class="de_count fs-15 wow fadeInRight" data-wow-delay=".6s">
+                                <h3 class="fs-40"><span class="timer fs-40" data-to="15" data-speed="3000">0</span>+
+                                </h3>
+                                Specialist
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-color-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle bg-white wow fadeInUp mb-3">We Have Best Team</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Our Specialist</h2>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-sm-6">
+                            <img src="images/team/1.webp" class="img-fluid rounded-10px" alt="">
+                            <div class="text-center pt-4">
+                                <h4 class="mb-0">James Dean</h4>
+                                <p class="mb-2">Licensed Acupuncturist</p>
+                                <div class="social-icons">
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <img src="images/team/2.webp" class="img-fluid rounded-10px" alt="">
+                            <div class="text-center pt-4">
+                                <h4 class="mb-0">Sophia Jenkins</h4>
+                                <p class="mb-2">Licensed Acupuncturist</p>
+                                <div class="social-icons">
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <img src="images/team/3.webp" class="img-fluid rounded-10px" alt="">
+                            <div class="text-center pt-4">
+                                <h4 class="mb-0">Melissa Taylor</h4>
+                                <p class="mb-2">Licensed Acupuncturist</p>
+                                <div class="social-icons">
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6">
+                            <img src="images/team/4.webp" class="img-fluid rounded-10px" alt="">
+                            <div class="text-center pt-4">
+                                <h4 class="mb-0">Noah Anderson</h4>
+                                <p class="mb-2">Licensed Acupuncturist</p>
+                                <div class="social-icons">
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i
+                                            class="bg-white id-color bg-hover-2 text-hover-white fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative jarallax overflow-hidden">
+                <img src="images/background/gradient-2.webp" class="jarallax-img" alt="">
+                <div class="container">
+                    <div class="row g-4 gx-5">
+                        <div class="col-lg-12 text-center">
+                            <div class="subtitle text-dark wow fadeInUp mb-3">Vision &amp; Mission</div>
+                            <h2>Vision &amp; Mission</h2>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h4 class="mb-4 wow fadeInRight">Our Vision</h4>
+                            <p class="fs-24 fw-600 lh-1-4 wow fadeInUp">To make acupuncture accessible and affordable for everyone in our community, creating a welcoming space where healing happens together and health equity is a reality, not a privilege.</p>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h4 class="mb-4 wow fadeInRight">Our Mission</h4>
+                            <ol class="ol-style-1">
+                                <li class="wow fadeInUp" data-wow-delay=".2s"><span
+                                        class="fw-bold id-color">Accessibility:</span> We provide affordable, sliding-scale acupuncture in a community setting, removing financial barriers to healing and wellness.</li>
+                                <li class="wow fadeInUp" data-wow-delay=".4s"><span
+                                        class="fw-bold id-color">Community:</span> We create a shared healing space where people rest and recover together, building connection and collective wellness.</li>
+                                <li class="wow fadeInUp" data-wow-delay=".6s"><span class="fw-bold id-color">Empowerment:</span> We believe healthcare is a human right and work to build social and political power within marginalized communities through accessible healing.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="images/misc/flowers-crop-4.webp" class="w-20 absolute start-0 bottom-0 sw-anim" alt="">
+            </section>
+
+            <section class="bg-color no-top no-bottom">
+                <div class="container-fluid">
+                    <div class="row g-0 align-items-center">
+                        <div class="col-lg-4 col-md-4">
+                            <div class="relative p-4 text-light">
+                                <i class="d-block fs-40 mb-2 icofont-clock-time"></i>
+                                Mon-Thurs: 11AM-6PM<br>
+                                [Closed for Lunch 3-4PM]<br>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="relative p-4 bg-color-2 text-light">
+                                <i class="d-block fs-40 mb-2 icofont-location-pin"></i>
+                                324 Frank Ogawa Plaza<br>Oakland, CA 94612
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4">
+                            <div class="relative p-4 bg-color-3 text-dark">
+                                <i class="d-block fs-40 mb-2 icofont-phone"></i>
+                                510-519-8085<br>
+                                info@tuneupca.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer class="footer-light" style="background-color: #000; color: #fff;">
+            <div class="container relative z-1000">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="images/black-logo.svg" alt="" style="filter: brightness(0) invert(1);">
+                        <div class="spacer-20"></div>
+                        <p style="color: #fff;">At Tune Up Community Acupuncture, we understand that life's challenges can sometimes feel
+                            overwhelming, and
+                            seeking support can be a daunting step. That's why our team of dedicated acupuncturists is
+                            here
+                            to provide you with the compassionate guidance and expert care you deserve.</p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5 style="color: #fff;">Quick Links</h5>
+                                    <ul>
+                                        <li><a href="index.html" style="color: #fff;">Home</a></li>
+                                        <li><a href="about.html" style="color: #fff;">About Us</a></li>
+                                        <li><a href="what-to-expect.html" style="color: #fff;">What to Expect</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Services</a></li>
+                                        <li><a href="success-stories.html" style="color: #fff;">Success Stories</a></li>
+                                        <li><a href="contact.html" style="color: #fff;">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5 style="color: #fff;">Our Services</h5>
+                                    <ul>
+                                        <li><a href="services.html" style="color: #fff;">Acupuncture</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Cupping Therapy</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Herbal Medicine</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Gua Sha</a></li>
+                                        <li><a href="appointment.html" style="color: #fff;">Book Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1">
+                        <div class="widget">
+
+                            <div class="fw-bold" style="color: #fff;"><i class="icofont-location-pin me-2 id-color"></i>Office
+                                Location</div>
+                            <span style="color: #fff;">324 Frank Ogawa Plaza, Oakland, CA 94612</span>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold" style="color: #fff;"><i class="icofont-envelope me-2 id-color"></i>Send a Message
+                            </div>
+                            <span style="color: #fff;">info@tuneupca.com</span>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter relative z-1000" style="background-color: #000;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col" style="color: #fff;">
+                                    Copyright 2025 - Tune Up Community Acupuncture | Designed by &nbsp;<a
+                                        href="https://www.styner.dev/" target="_blank"
+                                        style="color: #fff;">StynerDev</a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#" style="color: #fff;">Terms &amp; Conditions</a></li>
+                                    <li><a href="#" style="color: #fff;">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt=""
+                style="filter: brightness(0) invert(1);">
+        </footer>
+        <!-- footer close -->
+    </div>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+    <script src="recaptcha.js"></script>
+
+</body>
+
+</html>

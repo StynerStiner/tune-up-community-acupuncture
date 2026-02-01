@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tune Up Community Acupuncture</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tune Up Community Acupuncture" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        section:not(footer) img[src*="flowers-crop"] {
+            filter: invert(48%) sepia(93%) saturate(450%) hue-rotate(38deg) brightness(95%) contrast(101%) !important;
+        }
+
+        footer.footer-light {
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+
+        footer.footer-light p,
+        footer.footer-light h5,
+        footer.footer-light a,
+        footer.footer-light span,
+        footer.footer-light .de-flex-col {
+            color: #fff !important;
+        }
+
+        footer.footer-light img[src*="logo"],
+        footer.footer-light img[src*="flowers-crop"] {
+            filter: brightness(0) invert(1) !important;
+        }
+
+        footer.footer-light .subfooter {
+            background-color: #000 !important;
+        }
+
+        /* Scale logo bigger WITHOUT affecting navbar layout */
+        header div#logo img {
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
+        }
+
+        header div#logo {
+            margin-left: -350px !important;
+            margin-top: 5px !important;
+        }
+
+        /* Lower navbar tabs to align with logo */
+        header .de-flex-col.header-col-mid {
+            align-items: center !important;
+        }
+
+        header .de-flex {
+            align-items: center;
+        }
+
+        header #mainmenu {
+            margin-bottom: 0;
+        }
+
+        header .de-flex-col.header-col-mid {
+            flex-grow: 1;
+            justify-content: flex-end !important;
+            padding-right: 0px;
+            margin-left: 100px;
+            margin-top: 35px;
+        }
+
+        header #mainmenu>li {
+            margin: 0 10px;
+        }
+
+        header #mainmenu>li>a {
+            font-size: 18px !important;
+        }
+        header #mainmenu>li>a:hover {
+            color: #88a800 !important;
+        }
+        header #mainmenu>li>a.active,
+        header #mainmenu>li.active>a {
+            color: #88a800 !important;
+        }
+
+        header .h-phone {
+            margin-top: 20px !important;
+        }
+
+        header .btn-main {
+            margin-top: 20px !important;
+        }
+
+        .bg-white-texture {
+            position: relative;
+            background: url(images/sectionbackground-images/white-watercolor-paper-background-texture-2026-01-08-05-58-23-utc.jpg);
+            background-size: auto;
+            background-repeat: repeat;
+        }
+
+        .bg-white-texture::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255, 255, 255, 0.7);
+            pointer-events: none;
+        }
+
+        section.bg-white-texture {
+            padding-top: 180px !important;
+        }
+
+        /* Mobile logo fix */
+        @media (max-width: 991px) {
+            header div#logo {
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            header div#logo img {
+                transform: scale(1.5) !important;
+            }
+
+            section.bg-white-texture {
+                padding-top: 120px !important;
+            }
+            footer.footer-light .col-lg-4:first-child p {
+                display: none;
+            }
+            footer.footer-light .col-lg-4 {
+                margin-bottom: 20px;
+            }
+            footer.footer-light .widget h5 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            footer.footer-light .widget ul li {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+            footer.footer-light .spacer-20 {
+                height: 8px !important;
+            }
+            footer.footer-light .social-icons {
+                margin-top: 10px;
+            }
+            footer.footer-light .subfooter {
+                display: none !important;
+            }
+            footer.footer-light .subfooter .de-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer.footer-light .subfooter .de-flex-col {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li a {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="header-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-location-pin"></i>100 S
+                                            324 Frank Ogawa Plaza, Oakland, CA 94612</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-clock-time"></i><span>Mon -
+                                                Mon-Thurs: 11AM-6PM</span><span class="ms-3">[Closed for Lunch
+                                                3-4PM]</a></div>
+                                    <div class="topbar-widget"><a href="#"><i
+                                                class="icofont-envelope"></i>info@tuneupca.com</a></div>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/black-logo.svg" alt="">
+                                        <img class="logo-scroll" src="images/black-logo.svg" alt="">
+                                        <img class="logo-mobile" src="images/black-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="what-to-expect.html">What to Expect</a></li>
+                                    <li><a class="menu-item active" href="services.html">Services</a></li>
+                                    <li><a class="menu-item" href="success-stories.html">Success Stories</a></li>
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <div class="h-phone xs-hide">
+                                        <i class="icofont-headphone-alt"></i>
+                                        <span>Need Help?</span>510-519-8085
+                                    </div>
+                                    <a href="appointment.html" class="btn-main d-xl-block d-md-none">Make
+                                        Appointment</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div id="content" class="no-top no-bottom">
+            <div id="top"></div>
+
+            <section class="bg-white-texture relative" style="overflow: visible;">
+                <img src="images/misc/flowers-crop-2.webp" class="w-30 absolute top-0 end-0 sw-anim" alt=""
+                    style="z-index: 1;">
+                <img src="images/misc/flowers-crop-4.webp" class="w-20 absolute start-0 bottom-0 sw-anim" alt="">
+                <div class="container" style="position: relative; z-index: 2;">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Our Services</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Acupuncture &amp; <span
+                                    class="alt-font fw-500 fs-64 id-color-2">Treatments</span></h2>
+                            <div class="spacer-half"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="relative">
+                                <a href="service-single.html" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-10px shadow-soft">
+                                        <img src="images/misc/flowers-crop-5-white.webp"
+                                            class="w-50 start-0 bottom-0 absolute hover-op-0" alt="">
+                                        <div class="absolute start-0 w-100 hover-op-0 abs-middle text-center">
+                                            <h3 class="text-white">Pain Relief</h3>
+                                        </div>
+                                        <div
+                                            class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                                            <p class="no-bottom">Acupuncture effectively treats chronic pain, back pain, neck pain, and joint pain.</p>
+                                        </div>
+                                        <div class="absolute start-0 w-100 h-100 bg-dark-op-50 hover-op-1"></div>
+                                        <img src="images/services/1.webp" class="img-fluid hover-scale-1-2" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="relative">
+                                <a href="service-single.html" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-10px shadow-soft">
+                                        <img src="images/misc/flowers-crop-5-white.webp"
+                                            class="w-50 start-0 bottom-0 absolute hover-op-0" alt="">
+                                        <div class="absolute start-0 w-100 hover-op-0 abs-middle text-center">
+                                            <h3 class="text-white">Stress & Anxiety</h3>
+                                        </div>
+                                        <div
+                                            class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                                            <p class="no-bottom">Acupuncture calms the nervous system and reduces stress and anxiety.</p>
+                                        </div>
+                                        <div class="absolute start-0 w-100 h-100 bg-dark-op-50 hover-op-1"></div>
+                                        <img src="images/services/2.webp" class="img-fluid hover-scale-1-2" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="relative">
+                                <a href="service-single.html" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-10px shadow-soft">
+                                        <img src="images/misc/flowers-crop-5-white.webp"
+                                            class="w-50 start-0 bottom-0 absolute hover-op-0" alt="">
+                                        <div class="absolute start-0 w-100 hover-op-0 abs-middle text-center">
+                                            <h3 class="text-white">Sleep Issues</h3>
+                                        </div>
+                                        <div
+                                            class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                                            <p class="no-bottom">Acupuncture helps regulate sleep cycles and treats insomnia naturally.</p>
+                                        </div>
+                                        <div class="absolute start-0 w-100 h-100 bg-dark-op-50 hover-op-1"></div>
+                                        <img src="images/services/3.webp" class="img-fluid hover-scale-1-2" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="relative">
+                                <a href="service-single.html" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-10px shadow-soft">
+                                        <img src="images/misc/flowers-crop-5-white.webp"
+                                            class="w-50 start-0 bottom-0 absolute hover-op-0" alt="">
+                                        <div class="absolute start-0 w-100 hover-op-0 abs-middle text-center">
+                                            <h3 class="text-white">Headaches & Migraines</h3>
+                                        </div>
+                                        <div
+                                            class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                                            <p class="no-bottom">Acupuncture reduces frequency and intensity of headaches and migraines.</p>
+                                        </div>
+                                        <div class="absolute start-0 w-100 h-100 bg-dark-op-50 hover-op-1"></div>
+                                        <img src="images/services/4.webp" class="img-fluid hover-scale-1-2" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="relative">
+                                <a href="service-single.html" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-10px shadow-soft">
+                                        <img src="images/misc/flowers-crop-5-white.webp"
+                                            class="w-50 start-0 bottom-0 absolute hover-op-0" alt="">
+                                        <div class="absolute start-0 w-100 hover-op-0 abs-middle text-center">
+                                            <h3 class="text-white">Digestive Health</h3>
+                                        </div>
+                                        <div
+                                            class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                                            <p class="no-bottom">Acupuncture supports digestive function and relieves discomfort.</p>
+                                        </div>
+                                        <div class="absolute start-0 w-100 h-100 bg-dark-op-50 hover-op-1"></div>
+                                        <img src="images/services/6.webp" class="img-fluid hover-scale-1-2" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <div class="relative">
+                                <a href="service-single.html" class="d-block hover">
+                                    <div class="relative overflow-hidden rounded-10px shadow-soft">
+                                        <img src="images/misc/flowers-crop-5-white.webp"
+                                            class="w-50 start-0 bottom-0 absolute hover-op-0" alt="">
+                                        <div class="absolute start-0 w-100 hover-op-0 abs-middle text-center">
+                                            <h3 class="text-white">Women's Health</h3>
+                                        </div>
+                                        <div
+                                            class="absolute start-0 w-100 hover-op-1 p-5 abs-middle z-2 text-center text-white">
+                                            <p class="no-bottom">Acupuncture treats menstrual issues, cramps, and supports reproductive health.</p>
+                                        </div>
+                                        <div class="absolute start-0 w-100 h-100 bg-dark-op-50 hover-op-1"></div>
+                                        <img src="images/services/5.webp" class="img-fluid hover-scale-1-2" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="spacer-double"></div>
+                </div>
+            </section>
+
+            <section class="section-dark text-light jarallax">
+                <img src="images/background/3.webp" class="jarallax-img" alt="">
+                <div class="container">
+
+                    <div class="row g-4">
+                        <div class="col-lg-4">
+                            <div class="rounded-10px padding30 h-100" data-bgcolor="rgba(32, 32, 32, .75)">
+                                <h4 class="id-color-2">Initial Consultation</h4>
+                                <p>The acupuncturist begins with a comprehensive health assessment, reviewing your
+                                    medical history, current symptoms, lifestyle, diet, and sleep patterns. This
+                                    holistic approach helps us understand your unique constitution and identify the root
+                                    cause of your health concerns.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="rounded-10px padding30 h-100" data-bgcolor="rgba(32, 32, 32, .75)">
+                                <h4 class="id-color-2">Diagnosis & Treatment Plan</h4>
+                                <p>Using Traditional Chinese Medicine diagnostic methods including pulse and tongue
+                                    examination, we identify patterns of disharmony in your body's Qi (energy) flow.
+                                    Based on this assessment, we create a personalized treatment plan tailored to your
+                                    specific needs and health goals.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="rounded-10px padding30 h-100" data-bgcolor="rgba(32, 32, 32, .75)">
+                                <h4 class="id-color-2">Acupuncture Treatment</h4>
+                                <p>Fine, sterile needles are gently inserted at specific acupuncture points along your
+                                    body's meridians. This stimulates the body's natural healing response, promotes
+                                    circulation, and restores balance. Most patients find the experience deeply
+                                    relaxing.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="rounded-10px padding30 h-100" data-bgcolor="rgba(32, 32, 32, .75)">
+                                <h4 class="id-color-2">Rest & Healing</h4>
+                                <p>After needle insertion, you rest comfortably for 20-30 minutes while the acupuncture works. Most patients find this deeply relaxing.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="rounded-10px padding30 h-100" data-bgcolor="rgba(32, 32, 32, .75)">
+                                <h4 class="id-color-2">Lifestyle Guidance</h4>
+                                <p>We provide personalized recommendations for diet, exercise, and lifestyle
+                                    modifications based on Traditional Chinese Medicine principles. These suggestions
+                                    help support your treatment, promote long-term wellness, and prevent future
+                                    imbalances.</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="rounded-10px padding30 h-100" data-bgcolor="rgba(32, 32, 32, .75)">
+                                <h4 class="id-color-2">Monitoring Progress</h4>
+                                <p>Throughout your treatment series, we regularly assess your progress and response to
+                                    therapy. Treatment plans are adjusted as needed based on your body's response and
+                                    evolving health needs to ensure optimal results.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-dark jarallax">
+                <img src="images/background/1.webp" class="jarallax-img" alt="">
+                <div class="container">
+                    <div class="row text-light">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle s2 wow fadeInUp mb-3">Affordable Care</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Sliding Scale Pricing</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".3s">Pay what you can afford. No proof of income
+                                required.</p>
+                            <div class="spacer-single"></div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 align-items-stretch justify-content-center">
+                        <div class="col-lg-5 col-md-6 d-flex">
+                            <div class="relative bg-white w-100 rounded-10px overflow-hidden wow fadeInUp d-flex flex-column"
+                                data-wow-delay=".0s">
+                                <h4 class="bg-color text-light p-3 text-center">Community Acupuncture</h4>
+                                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                                    <div class="fs-14 text-dark fw-500">Sliding Scale</div>
+                                    <div class="mb-3">
+                                        <h2 class="d-inline id-color-2">$25 - $50</h2><span
+                                            class="fs-14">/session</span>
+                                    </div>
+                                    <p>Treatment in our peaceful shared community space. Relax in a zero-gravity
+                                        recliner while receiving personalized acupuncture care.</p>
+
+                                    <ul class="ul-style-2 fw-600 text-dark mb-3 text-start">
+                                        <li>No proof of income required</li>
+                                        <li>45-60 minute sessions</li>
+                                        <li>Walk-ins welcome</li>
+                                        <li>Comfortable recliners</li>
+                                    </ul>
+
+                                    <div class="mt-auto">
+                                        <a class="btn-main btn-light-trans w-100" href="appointment.html">
+                                            Book Now
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 col-md-6 d-flex">
+                            <div class="relative bg-white w-100 rounded-10px overflow-hidden wow fadeInUp d-flex flex-column"
+                                data-wow-delay=".2s">
+                                <h4 class="bg-color-2 text-light p-3 text-center">First Visit</h4>
+                                <div class="p-4 text-center d-flex flex-column flex-grow-1">
+                                    <div class="fs-14 text-dark fw-500">New Patient Special</div>
+                                    <div class="mb-3">
+                                        <h2 class="d-inline id-color-2">$25 - $50</h2><span class="fs-14">/first
+                                            session</span>
+                                    </div>
+                                    <p>Your first visit includes a brief health intake, consultation with Dr. Eun Kim,
+                                        and a full acupuncture treatment.</p>
+
+                                    <ul class="ul-style-2 fw-600 text-dark mb-3 text-start">
+                                        <li>Health history review</li>
+                                        <li>Personalized treatment plan</li>
+                                        <li>Full acupuncture session</li>
+                                        <li>Same sliding scale pricing</li>
+                                    </ul>
+
+                                    <div class="mt-auto">
+                                        <a class="btn-main btn-light-trans w-100" href="appointment.html">
+                                            Schedule First Visit
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bg-white-texture relative" style="overflow: visible;">
+                <img src="images/misc/flowers-crop-2.webp" class="w-30 absolute top-0 end-0 sw-anim" alt=""
+                    style="z-index: 1;">
+                <img src="images/misc/flowers-crop-4.webp" class="w-20 absolute start-0 bottom-0 sw-anim" alt="">
+                <div class="container" style="position: relative; z-index: 2;">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Do you have</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Any Questions</h2>
+                        </div>
+                    </div>
+
+                    <div class="row g-4 align-items-center">
+
+                        <div class="col-lg-12">
+                            <div class="accordion s2 wow fadeInUp">
+                                <div class="accordion-section">
+                                    <div class="accordion-section-title" data-tab="#accordion-a1">
+                                        Why and how is community acupuncture offered at such a low price?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a1">
+                                        <p>We keep our operational costs low by keeping the treatment space open so more
+                                            patients can be seen at one time. This is how acupuncture is often
+                                            administered in China. Private room acupuncture is a development mainly
+                                            introduced by the US.</p>
+                                        <p>There is power in healing together. Sharing a collective space generates not
+                                            only powerful healing Qi but also brings people together to heal. This helps
+                                            to counteract modern society's isolation and loneliness that exacerbates
+                                            many of our modern diseases.</p>
+                                        <p>Our mission is to generate healing justice because we know our collective
+                                            liberation is tied to healing our individual and collective trauma and pain.
+                                            This is more possible when healing is accessible in terms of not only
+                                            affordability but also when barriers related to race, gender, class and
+                                            other dynamics are acknowledged and removed.</p>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a2">
+                                        What can acupuncture treat and how does it work?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a2">
+                                        <p>Many of our patients are living with chronic anxiety, stress, depression,
+                                            pain, digestive upset, insomnia, menstrual discomfort, and other conditions
+                                            that we can see and those we cannot see.</p>
+                                        <p>We provide a space that offers our bodies the space to rest, center, ground
+                                            and encourage a natural process of healing. Acupuncture enhances this
+                                            process.</p>
+                                        <p>We work together to listen to your body within a framework of Traditional
+                                            Chinese Medicine diagnostics. Your tongue, pulse, and areas on your arms,
+                                            hands, legs and feet help tell us where the acupuncture points should be
+                                            placed.</p>
+                                    </div>
+                                    <div class="accordion-section-title" data-tab="#accordion-a3">
+                                        How is community acupuncture different from acupuncture in a private room?
+                                    </div>
+                                    <div class="accordion-section-content" id="accordion-a3">
+                                        <p>The points used at Tune Up Community Acupuncture are the same ones that are
+                                            used in private room acupuncture.</p>
+                                        <p>You can rest as long or longer with the needles in at a community acupuncture
+                                            clinic.</p>
+                                        <p>We check your tongue and pulse to diagnose and treat just as in a private
+                                            room setting.</p>
+                                        <p>The main difference is the amount of discussion we can have. In the community
+                                            setting, talking is brief as we use our diagnostic tools to decide how to
+                                            treat. If you prefer a more conversational approach we encourage you to seek
+                                            a private room acupuncturist.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top no-bottom">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="relative p-5 text-center h-100 bg-color text-light">
+                                <i class="d-block fs-40 mb-2 icofont-clock-time"></i>
+                                <h3>Schedule Your Appointment Today!</h3>
+                                Mon-Thurs: 11AM-6PM<br>
+                                [Closed for Lunch 3-4PM]<br>
+                                <a class="btn-main btn-light-trans text-light mt-3" href="appointment.html">Make
+                                    Appointment</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="relative p-5 text-center h-100 bg-color-2 text-light">
+                                <i class="d-block fs-40 mb-2 icofont-location-pin"></i>
+                                <h3>Visit Our Clinic</h3>
+                                324 Frank Ogawa Plaza<br>
+                                Oakland, CA 94612<br>
+                                <a class="btn-main btn-light-trans text-light mt-3" href="#">Get Direction</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer class="footer-light" style="background-color: #000; color: #fff;">
+            <div class="container relative z-1000">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="images/black-logo.svg" alt="" style="filter: brightness(0) invert(1);">
+                        <div class="spacer-20"></div>
+                        <p style="color: #fff;">At Tune Up Community Acupuncture, we understand that life's challenges can sometimes feel
+                            overwhelming, and
+                            seeking support can be a daunting step. That's why our team of dedicated acupuncturists is
+                            here
+                            to provide you with the compassionate guidance and expert care you deserve.</p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5 style="color: #fff;">Quick Links</h5>
+                                    <ul>
+                                        <li><a href="index.html" style="color: #fff;">Home</a></li>
+                                        <li><a href="about.html" style="color: #fff;">About Us</a></li>
+                                        <li><a href="what-to-expect.html" style="color: #fff;">What to Expect</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Services</a></li>
+                                        <li><a href="success-stories.html" style="color: #fff;">Success Stories</a></li>
+                                        <li><a href="contact.html" style="color: #fff;">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5 style="color: #fff;">Our Services</h5>
+                                    <ul>
+                                        <li><a href="services.html" style="color: #fff;">Acupuncture</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Cupping Therapy</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Herbal Medicine</a></li>
+                                        <li><a href="services.html" style="color: #fff;">Gua Sha</a></li>
+                                        <li><a href="appointment.html" style="color: #fff;">Book Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1">
+                        <div class="widget">
+
+                            <div class="fw-bold" style="color: #fff;"><i class="icofont-location-pin me-2 id-color"></i>Office
+                                Location</div>
+                            <span style="color: #fff;">324 Frank Ogawa Plaza, Oakland, CA 94612</span>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold" style="color: #fff;"><i class="icofont-envelope me-2 id-color"></i>Send a Message
+                            </div>
+                            <span style="color: #fff;">info@tuneupca.com</span>
+
+                            <div class="spacer-20"></div>
+
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter relative z-1000" style="background-color: #000;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col" style="color: #fff;">
+                                    Copyright 2025 - Tune Up Community Acupuncture | Designed by &nbsp;<a
+                                        href="https://www.styner.dev/" target="_blank"
+                                        style="color: #fff;">StynerDev</a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#" style="color: #fff;">Terms &amp; Conditions</a></li>
+                                    <li><a href="#" style="color: #fff;">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt=""
+                style="filter: brightness(0) invert(1);">
+        </footer>
+        <!-- footer close -->
+    </div>
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+    <script src="recaptcha.js"></script>
+
+</body>
+
+</html>

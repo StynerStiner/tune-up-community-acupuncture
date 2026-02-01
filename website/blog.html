@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tune Up Community Acupuncture</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tune Up Community Acupuncture" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        header div#logo img {
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
+        }
+        header div#logo {
+            margin-left: -350px !important;
+            margin-top: 5px !important;
+        }
+        header .de-flex-col.header-col-mid {
+            align-items: center !important;
+            flex-grow: 1;
+            justify-content: flex-end !important;
+            padding-right: 0px;
+            margin-left: 100px;
+            margin-top: 35px;
+        }
+        header .de-flex {
+            align-items: center;
+        }
+        header #mainmenu {
+            margin-bottom: 0;
+        }
+        header #mainmenu>li {
+            margin: 0 10px;
+        }
+        header #mainmenu>li>a {
+            font-size: 18px !important;
+        }
+        header .h-phone {
+            margin-top: 20px !important;
+        }
+        header .btn-main {
+            margin-top: 20px !important;
+        }
+        @media (max-width: 991px) {
+            header div#logo {
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+            }
+            header div#logo img {
+                transform: scale(1.5) !important;
+            }
+            footer.footer-light .col-lg-4:first-child p {
+                display: none;
+            }
+            footer.footer-light .col-lg-4 {
+                margin-bottom: 20px;
+            }
+            footer.footer-light .widget h5 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            footer.footer-light .widget ul li {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+            footer.footer-light .spacer-20 {
+                height: 8px !important;
+            }
+            footer.footer-light .social-icons {
+                margin-top: 10px;
+            }
+            footer.footer-light .subfooter .de-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer.footer-light .subfooter .de-flex-col {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li a {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="header-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-location-pin"></i>100 S
+                                            324 Frank Ogawa Plaza, Oakland, CA 94612</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-clock-time"></i><span>Mon -
+                                                Mon-Thurs: 11AM-6PM</span><span class="ms-3">[Closed for Lunch
+                                                3-4PM]</a></div>
+                                    <div class="topbar-widget"><a href="#"><i
+                                                class="icofont-envelope"></i>info@tuneupca.com</a></div>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/black-logo.svg" alt="">
+                                        <img class="logo-scroll" src="images/black-logo.svg" alt="">
+                                        <img class="logo-mobile" src="images/black-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="services.html">Services</a></li>
+                                    <li><a class="menu-item" href="study-case.html">Study Case</a></li>
+                                    <li><a class="menu-item" href="what-to-expect.html">What to Expect</a></li>
+                                    <li><a class="menu-item" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <div class="h-phone xs-hide">
+                                        <i class="icofont-headphone-alt"></i>
+                                        <span>Need Help?</span>510-519-8085
+                                    </div>
+                                    <a href="appointment.html" class="btn-main d-xl-block d-md-none">Make
+                                        Appointment</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div id="content" class="no-bottom">
+            <div id="top"></div>
+
+            <section class="relative overflow-hidden" style="padding-top: 30px; padding-bottom: 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Blog</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Latest News & <span
+                                    class="alt-font fw-500 fs-64 id-color-2">Articles</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="row g-4 gy-5">
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="rounded-20px">
+                                <div class="post-image rounded-10px">
+                                    <div class="d-tagline">
+                                        <span>tips &amp; tricks</span>
+                                    </div>
+                                    <img alt="" src="images/news/1.webp" class="lazy">
+                                </div>
+                                <div class="pt-2 h-100">
+                                    <h4><a class="text-dark" href="blog-single.html">The Power of Positive Thinking</a>
+                                    </h4>
+                                    <p class="mb-3">Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                        enim reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                    <div class="relative bg-grey p-1 px-3 rounded-10px">
+                                        <img src="images/testimonial/1.jpg" class="w-20px me-2 circle" alt="">
+                                        <div class="d-inline fs-14 fw-bold me-3">Brunilda Doniger</div>
+                                        <div class="d-inline fs-14 fw-600"><i
+                                                class="icofont-ui-calendar id-color me-2"></i>18 Mar 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="rounded-20px">
+                                <div class="post-image rounded-10px">
+                                    <div class="d-tagline">
+                                        <span>tips &amp; tricks</span>
+                                    </div>
+                                    <img alt="" src="images/news/2.webp" class="lazy">
+                                </div>
+                                <div class="pt-2 h-100">
+                                    <h4><a class="text-dark" href="blog-single.html">Understanding the Roots of
+                                            Anxiety</a></h4>
+                                    <p class="mb-3">Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                        enim reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                    <div class="relative bg-grey p-1 px-3 rounded-10px">
+                                        <img src="images/testimonial/1.jpg" class="w-20px me-2 circle" alt="">
+                                        <div class="d-inline fs-14 fw-bold me-3">Brunilda Doniger</div>
+                                        <div class="d-inline fs-14 fw-600"><i
+                                                class="icofont-ui-calendar id-color me-2"></i>18 Mar 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="rounded-20px">
+                                <div class="post-image rounded-10px">
+                                    <div class="d-tagline">
+                                        <span>tips &amp; tricks</span>
+                                    </div>
+                                    <img alt="" src="images/news/3.webp" class="lazy">
+                                </div>
+                                <div class="pt-2 h-100">
+                                    <h4><a class="text-dark" href="blog-single.html">The Psychology of
+                                            Procrastination</a></h4>
+                                    <p class="mb-3">Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                        enim reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                    <div class="relative bg-grey p-1 px-3 rounded-10px">
+                                        <img src="images/testimonial/1.jpg" class="w-20px me-2 circle" alt="">
+                                        <div class="d-inline fs-14 fw-bold me-3">Brunilda Doniger</div>
+                                        <div class="d-inline fs-14 fw-600"><i
+                                                class="icofont-ui-calendar id-color me-2"></i>18 Mar 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="rounded-20px">
+                                <div class="post-image rounded-10px">
+                                    <div class="d-tagline">
+                                        <span>tips &amp; tricks</span>
+                                    </div>
+                                    <img alt="" src="images/news/4.webp" class="lazy">
+                                </div>
+                                <div class="pt-2 h-100">
+                                    <h4><a class="text-dark" href="blog-single.html">Stress Management Techniques</a>
+                                    </h4>
+                                    <p class="mb-3">Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                        enim reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                    <div class="relative bg-grey p-1 px-3 rounded-10px">
+                                        <img src="images/testimonial/1.jpg" class="w-20px me-2 circle" alt="">
+                                        <div class="d-inline fs-14 fw-bold me-3">Brunilda Doniger</div>
+                                        <div class="d-inline fs-14 fw-600"><i
+                                                class="icofont-ui-calendar id-color me-2"></i>18 Mar 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="rounded-20px">
+                                <div class="post-image rounded-10px">
+                                    <div class="d-tagline">
+                                        <span>tips &amp; tricks</span>
+                                    </div>
+                                    <img alt="" src="images/news/5.webp" class="lazy">
+                                </div>
+                                <div class="pt-2 h-100">
+                                    <h4><a class="text-dark" href="blog-single.html">The Science of Healing and Resilience</a>
+                                    </h4>
+                                    <p class="mb-3">Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                        enim reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                    <div class="relative bg-grey p-1 px-3 rounded-10px">
+                                        <img src="images/testimonial/1.jpg" class="w-20px me-2 circle" alt="">
+                                        <div class="d-inline fs-14 fw-bold me-3">Brunilda Doniger</div>
+                                        <div class="d-inline fs-14 fw-600"><i
+                                                class="icofont-ui-calendar id-color me-2"></i>18 Mar 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 mb10">
+                            <div class="rounded-20px">
+                                <div class="post-image rounded-10px">
+                                    <div class="d-tagline">
+                                        <span>tips &amp; tricks</span>
+                                    </div>
+                                    <img alt="" src="images/news/6.webp" class="lazy">
+                                </div>
+                                <div class="pt-2 h-100">
+                                    <h4><a class="text-dark" href="blog-single.html">The Secrets to a Fulfilling
+                                            Life</a></h4>
+                                    <p class="mb-3">Dolore officia sint incididunt non excepteur ea mollit commodo ut
+                                        enim reprehenderit cupidatat labore ad laborum consectetur consequat...</p>
+                                    <div class="relative bg-grey p-1 px-3 rounded-10px">
+                                        <img src="images/testimonial/1.jpg" class="w-20px me-2 circle" alt="">
+                                        <div class="d-inline fs-14 fw-bold me-3">Brunilda Doniger</div>
+                                        <div class="d-inline fs-14 fw-600"><i
+                                                class="icofont-ui-calendar id-color me-2"></i>18 Mar 2024</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer class="footer-light">
+            <div class="container relative z-1000">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="images/black-logo.svg" alt="">
+                        <div class="spacer-20"></div>
+                        <p>At Tune Up Community Acupuncture, we understand that life's challenges can sometimes feel
+                            overwhelming, and
+                            seeking support can be a daunting step. That's why our team of dedicated acupuncturists is
+                            here
+                            to provide you with the compassionate guidance and expert care you deserve.</p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Quick Links</h5>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="what-to-expect.html">What to Expect</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="success-stories.html">Success Stories</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="services.html">Acupuncture</a></li>
+                                        <li><a href="services.html">Cupping Therapy</a></li>
+                                        <li><a href="services.html">Herbal Medicine</a></li>
+                                        <li><a href="services.html">Gua Sha</a></li>
+                                        <li><a href="appointment.html">Book Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1">
+                        <div class="widget">
+
+                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color"></i>Office
+                                Location</div>
+                            324 Frank Ogawa Plaza, Oakland, CA 94612
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color"></i>Send a Message
+                            </div>
+                            info@tuneupca.com
+
+                            <div class="spacer-20"></div>
+
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter relative z-1000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    Copyright 2025 - Tune Up Community Acupuncture | Designed by &nbsp;<a
+                                        href="https://www.styner.dev/" target="_blank">StynerDev</a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt="">
+        </footer>
+        <!-- footer close -->
+    </div>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+    <script src="recaptcha.js"></script>
+
+</body>
+
+</html>

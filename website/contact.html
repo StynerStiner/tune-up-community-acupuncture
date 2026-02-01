@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Tune Up Community Acupuncture</title>
+    <link rel="icon" href="images/icon.png" type="image/gif" sizes="16x16">
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Tune Up Community Acupuncture" name="description">
+    <meta content="" name="keywords">
+    <meta content="" name="author">
+    <!-- CSS Files
+    ================================================== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" id="bootstrap">
+    <link href="css/plugins.css" rel="stylesheet" type="text/css">
+    <link href="css/swiper.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/coloring.css" rel="stylesheet" type="text/css">
+    <!-- color scheme -->
+    <link id="colors" href="css/colors/scheme-01.css" rel="stylesheet" type="text/css">
+    <style>
+        section:not(footer) img[src*="flowers-crop"] {
+            filter: invert(48%) sepia(93%) saturate(450%) hue-rotate(38deg) brightness(95%) contrast(101%) !important;
+        }
+
+        footer.footer-light img[src*="flowers-crop"] {
+            filter: brightness(0) invert(1) !important;
+        }
+
+        /* Scale logo bigger WITHOUT affecting navbar layout */
+        header div#logo img {
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
+        }
+
+        header div#logo {
+            margin-left: -350px !important;
+            margin-top: 5px !important;
+        }
+
+        /* Lower navbar tabs to align with logo */
+        header .de-flex-col.header-col-mid {
+            align-items: center !important;
+        }
+
+        header .de-flex {
+            align-items: center;
+        }
+
+        header #mainmenu {
+            margin-bottom: 0;
+        }
+
+        header .de-flex-col.header-col-mid {
+            flex-grow: 1;
+            justify-content: flex-end !important;
+            padding-right: 0px;
+            margin-left: 100px;
+            margin-top: 35px;
+        }
+
+        header #mainmenu>li {
+            margin: 0 10px;
+        }
+
+        header #mainmenu>li>a {
+            font-size: 18px !important;
+        }
+        header #mainmenu>li>a:hover {
+            color: #88a800 !important;
+        }
+        header #mainmenu>li>a.active,
+        header #mainmenu>li.active>a {
+            color: #88a800 !important;
+        }
+
+        header .h-phone {
+            margin-top: 20px !important;
+        }
+
+        header .btn-main {
+            margin-top: 20px !important;
+        }
+
+        /* Mobile logo fix */
+        @media (max-width: 991px) {
+            header div#logo {
+                margin-left: 0 !important;
+                margin-top: 0 !important;
+            }
+
+            header div#logo img {
+                transform: scale(1.5) !important;
+            }
+            footer.footer-light .col-lg-4:first-child p {
+                display: none;
+            }
+            footer.footer-light .col-lg-4 {
+                margin-bottom: 20px;
+            }
+            footer.footer-light .widget h5 {
+                font-size: 13px;
+                font-weight: bold;
+            }
+            footer.footer-light .widget ul li {
+                font-size: 12px;
+                line-height: 1.6;
+            }
+            footer.footer-light .spacer-20 {
+                height: 8px !important;
+            }
+            footer.footer-light .social-icons {
+                margin-top: 10px;
+            }
+            footer.footer-light .subfooter {
+                display: none !important;
+            }
+            footer.footer-light .subfooter .de-flex {
+                flex-direction: column;
+                gap: 15px;
+            }
+            footer.footer-light .subfooter .de-flex-col {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                flex-direction: column;
+                gap: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li {
+                display: block;
+                margin-bottom: 8px;
+            }
+            footer.footer-light .subfooter .menu-simple li a {
+                font-size: 12px;
+            }
+            footer.footer-light .subfooter .menu-simple {
+                display: flex !important;
+                flex-direction: column !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrapper">
+        <div class="float-text show-on-scroll">
+            <span><a href="#">Scroll to top</a></span>
+        </div>
+        <div class="scrollbar-v show-on-scroll"></div>
+
+        <!-- page preloader begin -->
+        <div id="de-loader"></div>
+        <!-- page preloader close -->
+
+        <!-- header begin -->
+        <header class="header-light has-topbar">
+            <div id="topbar">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="d-flex justify-content-between xs-hide">
+                                <div class="header-widget d-flex">
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-location-pin"></i>100 S
+                                            324 Frank Ogawa Plaza, Oakland, CA 94612</a></div>
+                                    <div class="topbar-widget"><a href="#"><i class="icofont-clock-time"></i><span>Mon -
+                                                Mon-Thurs: 11AM-6PM</span><span class="ms-3">[Closed for Lunch
+                                                3-4PM]</a></div>
+                                    <div class="topbar-widget"><a href="#"><i
+                                                class="icofont-envelope"></i>info@tuneupca.com</a></div>
+                                </div>
+
+                                <div class="social-icons">
+                                    <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-pinterest fa-lg"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="de-flex sm-pt10">
+                            <div class="de-flex-col">
+                                <!-- logo begin -->
+                                <div id="logo">
+                                    <a href="index.html">
+                                        <img class="logo-main" src="images/black-logo.svg" alt="">
+                                        <img class="logo-scroll" src="images/black-logo.svg" alt="">
+                                        <img class="logo-mobile" src="images/black-logo.svg" alt="">
+                                    </a>
+                                </div>
+                                <!-- logo close -->
+                            </div>
+                            <div class="de-flex-col header-col-mid">
+                                <ul id="mainmenu">
+                                    <li><a class="menu-item" href="index.html">Home</a></li>
+                                    <li><a class="menu-item" href="about.html">About Us</a></li>
+                                    <li><a class="menu-item" href="what-to-expect.html">What to Expect</a></li>
+                                    <li><a class="menu-item" href="services.html">Services</a></li>
+                                    <li><a class="menu-item" href="success-stories.html">Success Stories</a></li>
+                                    <li><a class="menu-item active" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                            <div class="de-flex-col">
+                                <div class="menu_side_area">
+                                    <div class="h-phone xs-hide">
+                                        <i class="icofont-headphone-alt"></i>
+                                        <span>Need Help?</span>510-519-8085
+                                    </div>
+                                    <a href="appointment.html" class="btn-main d-xl-block d-md-none">Make
+                                        Appointment</a>
+                                    <span id="menu-btn"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header close -->
+        <!-- content begin -->
+        <div class="no-bottom" id="content">
+            <div id="top"></div>
+
+            <section class="relative overflow-hidden" style="padding-top: 30px; padding-bottom: 0px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 offset-lg-3 text-center">
+                            <div class="subtitle wow fadeInUp mb-3">Contact</div>
+                            <h2 class="wow fadeInUp" data-wow-delay=".2s">Get In <span
+                                    class="alt-font fw-500 fs-64 id-color-2">Touch</span></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relative overflow-hidden">
+                <img src="images/misc/flowers-crop-4.webp" class="w-20 absolute start-0 bottom-0 sw-anim" alt=""
+                    style="z-index: 1;">
+                <div class="container">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="subtitle wow fadeInUp mb-3">Contact Form</div>
+                            <h2 class="wow fadeInUp">Get In Touch</h2>
+
+                            <p>Whether you have a question, a suggestion, or just want to say hello, this is the place
+                                to do it. Please fill out the form below with your details and message, and we'll get
+                                back to you as soon as possible.</p>
+
+                            <div class="spacer-single"></div>
+
+                            <h4>Our Office</h4>
+
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="img-with-cap mb20">
+                                        <div class="d-title">Mon - Fri 08.00 - 18.00</div>
+                                        <div class="d-overlay"></div>
+                                        <img src="images/misc/5.webp" class="img-fullwidth rounded-1" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="fw-bold text-dark"><i
+                                            class="icofont-location-pin me-2 id-color-2"></i>Office Location</div>
+                                    324 Frank Ogawa Plaza, Oakland, CA 94612
+
+                                    <div class="spacer-single"></div>
+
+                                    <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color-2"></i>Send
+                                        a Message</div>
+                                    info@tuneupca.com
+
+                                    <div class="spacer-single"></div>
+
+                                    <div class="fw-bold text-dark"><i class="icofont-phone me-2 id-color-2"></i>Call Us
+                                        Directly</div>
+                                    510-519-8085
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="p-4 bg-grey rounded-10px">
+                                <form name="contactForm" id="contact_form" class="position-relative z1000" method="post"
+                                    action="#">
+
+                                    <div class="field-set">
+                                        <input type="text" name="Name" id="name" class="form-control no-border"
+                                            placeholder="Your Name" required>
+                                    </div>
+
+                                    <div class="field-set">
+                                        <input type="text" name="Email" id="email" class="form-control no-border"
+                                            placeholder="Your Email" required>
+                                    </div>
+
+                                    <div class="field-set">
+                                        <input type="text" name="phone" id="phone" class="form-control no-border"
+                                            placeholder="Your Phone" required>
+                                    </div>
+
+                                    <div class="field-set mb20">
+                                        <textarea name="message" id="message" class="form-control no-border"
+                                            placeholder="Your Message" required></textarea>
+                                    </div>
+
+
+                                    <div class="g-recaptcha" data-sitekey="6LdW03QgAAAAAJko8aINFd1eJUdHlpvT4vNKakj6">
+                                    </div>
+                                    <div id='submit' class="mt20">
+                                        <input type='submit' id='send_message' value='Send Message' class="btn-main">
+                                    </div>
+
+                                    <div id="success_message" class='success'>
+                                        Your message has been sent successfully. Refresh this page if you want to send
+                                        more messages.
+                                    </div>
+                                    <div id="error_message" class='error'>
+                                        Sorry there was an error sending your form.
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="no-top no-bottom relative" style="overflow: visible;">
+                <div class="container-fluid">
+                    <div class="row g-0">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="relative p-5 text-center h-100 bg-color text-light">
+                                <i class="d-block fs-40 mb-2 icofont-clock-time"></i>
+                                <h3>Schedule Your Appointment Today!</h3>
+                                Mon-Thurs: 11AM-6PM<br>
+                                [Closed for Lunch 3-4PM]<br>
+                                <a class="btn-main btn-light-trans text-light mt-3" href="appointment.html">Make
+                                    Appointment</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="relative p-5 text-center h-100 bg-color-2 text-light">
+                                <i class="d-block fs-40 mb-2 icofont-location-pin"></i>
+                                <h3>Visit Our Clinic</h3>
+                                324 Frank Ogawa Plaza<br>
+                                Oakland, CA 94612<br>
+                                <a class="btn-main btn-light-trans text-light mt-3" href="#">Get Direction</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+        <!-- content close -->
+        <!-- footer begin -->
+        <footer class="footer-light">
+            <div class="container relative z-1000">
+                <div class="row gx-5">
+                    <div class="col-lg-4 col-sm-12">
+                        <img src="images/black-logo.svg" alt="">
+                        <div class="spacer-20"></div>
+                        <p>At Tune Up Community Acupuncture, we understand that life's challenges can sometimes feel
+                            overwhelming, and
+                            seeking support can be a daunting step. That's why our team of dedicated acupuncturists is here
+                            to provide you with the compassionate guidance and expert care you deserve.</p>
+
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-1 order-sm-2">
+                        <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Quick Links</h5>
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="about.html">About Us</a></li>
+                                        <li><a href="what-to-expect.html">What to Expect</a></li>
+                                        <li><a href="services.html">Services</a></li>
+                                        <li><a href="success-stories.html">Success Stories</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                                <div class="widget">
+                                    <h5>Our Services</h5>
+                                    <ul>
+                                        <li><a href="services.html">Acupuncture</a></li>
+                                        <li><a href="services.html">Cupping Therapy</a></li>
+                                        <li><a href="services.html">Herbal Medicine</a></li>
+                                        <li><a href="services.html">Gua Sha</a></li>
+                                        <li><a href="appointment.html">Book Appointment</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-12 order-lg-2 order-sm-1">
+                        <div class="widget">
+
+                            <div class="fw-bold text-dark"><i class="icofont-location-pin me-2 id-color"></i>Office
+                                Location</div>
+                            324 Frank Ogawa Plaza, Oakland, CA 94612
+
+                            <div class="spacer-20"></div>
+
+                            <div class="fw-bold text-dark"><i class="icofont-envelope me-2 id-color"></i>Send a Message
+                            </div>
+                            info@tuneupca.com
+
+                            <div class="spacer-20"></div>
+
+                            <div class="social-icons mb-sm-30">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subfooter relative z-1000">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="de-flex">
+                                <div class="de-flex-col">
+                                    Copyright 2025 - Tune Up Community Acupuncture | Designed by &nbsp;<a
+                                        href="https://www.styner.dev/" target="_blank">StynerDev</a>
+                                </div>
+                                <ul class="menu-simple">
+                                    <li><a href="#">Terms &amp; Conditions</a></li>
+                                    <li><a href="#">Privacy Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <img src="images/misc/flowers-crop-3.webp" class="w-20 absolute top-0 end-0 sw-anim" alt="">
+        </footer>
+        <!-- footer close -->
+    </div>
+
+
+
+    <!-- Javascript Files
+    ================================================== -->
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js' async defer></script>
+    <script src="form.js"></script>
+    <script src="recaptcha.js"></script>
+
+</body>
+
+</html>
