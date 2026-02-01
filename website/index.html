@@ -106,24 +106,24 @@
 
         /* Scale logo bigger WITHOUT affecting navbar layout */
         header div#logo img {
-            width: 200px !important;
-            height: auto !important;
+            transform: scale(2.3) !important;
+            transform-origin: left center !important;
             image-rendering: crisp-edges !important;
-            image-rendering: -webkit-optimize-contrast !important;
         }
 
         header div#logo {
-            max-width: 200px !important;
+            margin-left: -350px !important;
+            margin-top: 5px !important;
         }
 
         /* Fix logo on mobile */
         @media (max-width: 991px) {
             header div#logo {
-                max-width: 120px !important;
+                margin-left: 0 !important;
+                margin-top: 0 !important;
             }
             header div#logo img {
-                width: 120px !important;
-                height: auto !important;
+                transform: scale(1.5) !important;
             }
         }
 
