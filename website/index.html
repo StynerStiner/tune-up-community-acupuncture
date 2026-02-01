@@ -203,15 +203,60 @@
             .swiper-slide .slider-title .d-block {
                 font-size: 28px !important;
             }
-            /* Testimonial section - HIDE ON MOBILE */
+            /* Testimonial section - COMPACT on mobile */
             #testimonial-section,
             section.text-light.section-dark.jarallax,
             section#testimonial-section.text-light.section-dark.jarallax {
-                display: none !important;
-                visibility: hidden !important;
-                height: 0 !important;
+                display: block !important;
+                visibility: visible !important;
+                height: 200px !important;
+                max-height: 200px !important;
                 overflow: hidden !important;
+                padding: 15px 10px !important;
+            }
+            #testimonial-section .container,
+            section.text-light.section-dark.jarallax .container {
+                height: 100% !important;
+            }
+            #testimonial-section .testimonial-slide,
+            .testimonial-slide {
+                flex-direction: row !important;
+                align-items: center !important;
+                gap: 10px !important;
                 padding: 0 !important;
+            }
+            #testimonial-section .testimonial-slide.active {
+                display: flex !important;
+            }
+            #testimonial-section .testimonial-slide .col-lg-2,
+            #testimonial-section .testimonial-slide .col-sm-4 {
+                width: auto !important;
+                flex: 0 0 60px !important;
+                padding: 0 !important;
+                margin: 0 !important;
+            }
+            #testimonial-section .testimonial-slide img.circle {
+                width: 50px !important;
+                height: 50px !important;
+                margin: 0 !important;
+            }
+            #testimonial-section .testimonial-slide h5 {
+                font-size: 11px !important;
+                margin: 3px 0 0 0 !important;
+            }
+            #testimonial-section .testimonial-slide p.small {
+                font-size: 9px !important;
+                margin: 0 !important;
+            }
+            #testimonial-section .testimonial-slide .col-lg-8,
+            #testimonial-section .testimonial-slide .col-sm-8 {
+                flex: 1 !important;
+                padding: 0 5px !important;
+            }
+            #testimonial-section .testimonial-slide .col-lg-8 p,
+            #testimonial-section .testimonial-slide p.fs-32 {
+                font-size: 12px !important;
+                line-height: 1.3 !important;
                 margin: 0 !important;
             }
             section.bg-color.text-light.pt40.pb40 {
