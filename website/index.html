@@ -204,8 +204,15 @@
                 font-size: 28px !important;
             }
             /* Testimonial section - HIDE ON MOBILE */
-            section.text-light.section-dark.jarallax {
+            #testimonial-section,
+            section.text-light.section-dark.jarallax,
+            section#testimonial-section.text-light.section-dark.jarallax {
                 display: none !important;
+                visibility: hidden !important;
+                height: 0 !important;
+                overflow: hidden !important;
+                padding: 0 !important;
+                margin: 0 !important;
             }
             section.bg-color.text-light.pt40.pb40 {
                 text-align: left !important;
@@ -531,7 +538,7 @@
 
 
 
-            <section class="text-light section-dark jarallax">
+            <section id="testimonial-section" class="text-light section-dark jarallax">
                 <img src="images/background/3.webp" class="jarallax-img" alt="">
                 <div class="container">
                     <!-- Testimonial 1 - Dr. Eun Kim -->
