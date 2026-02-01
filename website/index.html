@@ -659,9 +659,19 @@
                     let currentSlide = 0;
 
                     function showNextSlide() {
+                        // Hide current slide
                         slides[currentSlide].classList.remove('active');
+                        slides[currentSlide].style.display = 'none';
+                        slides[currentSlide].style.opacity = '0';
+                        
+                        // Move to next
                         currentSlide = (currentSlide + 1) % slides.length;
+                        
+                        // Show next slide
                         slides[currentSlide].classList.add('active');
+                        slides[currentSlide].style.display = 'flex';
+                        slides[currentSlide].style.opacity = '1';
+                        slides[currentSlide].style.visibility = 'visible';
                     }
 
                     // Rotate every 6 seconds
