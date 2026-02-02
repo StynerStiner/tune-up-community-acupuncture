@@ -305,6 +305,15 @@ header div#logo {
 
 header div#logo img{
   width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header div#logo img {
+    width: 180px;
+    height: auto;
+  }
 }
 
 header .logo-2 {
