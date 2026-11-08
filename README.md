@@ -62,7 +62,7 @@ website/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/stynerdev225/tune-up-community-acupuncture.git
+   git clone https://github.com/StynerStiner/tune-up-community-acupuncture.git
    ```
 
 2. Start a local server:
